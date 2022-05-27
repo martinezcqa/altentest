@@ -1,4 +1,4 @@
-package es.maincode.domain
+package es.maincode.domain.common
 
 import java.util.*
 
@@ -90,5 +90,5 @@ data class UrlBusiness(
 
 data class ImageBusiness(
     var path: String = "",
-    var url: String = ""
+    var extension: String = ""
 )

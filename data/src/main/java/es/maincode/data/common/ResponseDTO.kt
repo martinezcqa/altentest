@@ -1,6 +1,6 @@
-package es.maincode.data
+package es.maincode.data.common
 
-import es.maincode.domain.*
+import es.maincode.domain.common.*
 import java.util.*
 
 data class CharacterDataWrapperResponse(
@@ -177,10 +177,10 @@ data class UrlResponse(
 
 data class ImageResponse(
     var path: String?,
-    var url: String?
+    var extension: String?
 ) {
     fun toDomain() = ImageBusiness(
         path ?: "",
-        url?: ""
+        extension?: ""
     )
 }
