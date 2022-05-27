@@ -1,18 +1,18 @@
 # Openbank - Mobile Test
 
-App test to openbank
+App test to openbank<br />
 
 # Architecture
 
-Modules: app (presentation), domain, data
-Presentation Pattern: MVVM
-Domain and data comunnication: Repository Pattern
+Modules: app (presentation), domain, data<br />
+Presentation Pattern: MVVM<br />
+Domain and data comunnication: Repository Pattern<br />
 
 # Third party dependencies
 
-Hilt
-Coil
-Retrofit
-Gson
-Apache Commons Codec
-OkHttp3
+Hilt<br />
+Coil<br />
+Retrofit<br />
+Gson<br />
+Apache Commons Codec<br />
+OkHttp3<br />
