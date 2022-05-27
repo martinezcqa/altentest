@@ -1,6 +1,6 @@
-package es.maincode.openbanktest.view
+package es.maincode.openbanktest.view.vo
 
-import es.maincode.domain.*
+import es.maincode.domain.common.*
 import java.util.*
 
 data class CharacterDataWrapperVO(
@@ -51,7 +51,26 @@ data class CharacterVO(
     var stories: StoryListVO,
     var events: EventListVO,
     var series: SeriesListVO
-)
+) {
+    fun getPairInfo(): List<Pair<String, String>> {
+        val pairList: MutableList<Pair<String, String>> = mutableListOf()
+        pairList.add(Pair("Name", name))
+        pairList.add(Pair("Description", description))
+        comics.items.forEachIndexed { index, comicSummaryVO ->
+            pairList.add(Pair("Comic $index", comicSummaryVO.name))
+        }
+        stories.items.forEachIndexed { index, storySummaryVO ->
+            pairList.add(Pair("Story $index", storySummaryVO.name))
+        }
+        events.items.forEachIndexed { index, eventSummaryVO ->
+            pairList.add(Pair("Event $index", eventSummaryVO.name))
+        }
+        series.items.forEachIndexed { index, seriesSummaryVO ->
+            pairList.add(Pair("Serie $index", seriesSummaryVO.name))
+        }
+        return pairList
+    }
+}
 
 fun CharacterBusiness.toPresentation() = CharacterVO(
     id,
@@ -177,10 +196,10 @@ fun UrlBusiness.toPresentation() = UrlVO(
 
 data class ImageVO(
     var path: String,
-    var url: String
+    var extension: String
 )
 
 fun ImageBusiness.toPresentation() = ImageVO(
     path,
-    url
+    extension
 )
