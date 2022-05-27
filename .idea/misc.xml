@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/optiva/.gradle/caches/transforms-3/ea22c9093e1030994338a5006095af4e/transformed/appcompat-1.4.1/res/drawable/abc_ic_ab_back_material.xml" value="0.198" />
+        <entry key="..\:/android/projects/openbanktest/app/src/main/res/drawable/ic_back.xml" value="0.198" />
+        <entry key="..\:/android/projects/openbanktest/app/src/main/res/drawable/progress_drawable.xml" value="0.1995" />
+        <entry key="..\:/android/projects/openbanktest/app/src/main/res/drawable/shape_double_mask.xml" value="0.198" />
+        <entry key="..\:/android/projects/openbanktest/app/src/main/res/drawable/shape_mask.xml" value="0.1995" />
+        <entry key="..\:/android/projects/openbanktest/app/src/main/res/layout/activity_main.xml" value="0.26510416666666664" />
+        <entry key="..\:/android/projects/openbanktest/app/src/main/res/layout/fragment_detail.xml" value="0.26510416666666664" />
         <entry key="..\:/android/projects/openbanktest/app/src/main/res/layout/fragment_list.xml" value="0.26510416666666664" />
+        <entry key="..\:/android/projects/openbanktest/app/src/main/res/layout/item_character.xml" value="0.358695652173913" />
+        <entry key="..\:/android/projects/openbanktest/app/src/main/res/layout/item_detail_info.xml" value="0.33" />
       </map>
     </option>
   </component>
