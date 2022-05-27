@@ -12,7 +12,6 @@ import es.maincode.data.detail.DetailService
 import es.maincode.data.list.ListRemoteDataSource
 import es.maincode.data.list.ListRepositoryImpl
 import es.maincode.data.list.ListService
-import es.maincode.data.utils.NetworkManager
 import es.maincode.domain.detail.DetailRepository
 import es.maincode.domain.list.ListRepository
 import okhttp3.OkHttpClient
@@ -40,11 +39,6 @@ object DataModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
-
-    @Provides
-    @Singleton
-    fun provideNetworkManager(@ApplicationContext context: Context): NetworkManager =
-        NetworkManager(context)
 
     @Provides
     @Singleton
