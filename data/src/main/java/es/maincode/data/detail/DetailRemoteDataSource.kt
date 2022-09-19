@@ -1,32 +1,24 @@
 package es.maincode.data.detail
 
-import es.maincode.data.common.CharacterDataWrapperResponse
+import es.maincode.data.common.CharacterResponse
 import es.maincode.domain.base.ResponsePair
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import org.apache.commons.codec.digest.DigestUtils
 import javax.inject.Inject
 
 class DetailRemoteDataSource @Inject constructor(
     private val service: DetailService
 ) {
-    suspend fun getDetail(id: Int): Flow<ResponsePair<CharacterDataWrapperResponse, Unit>> = flow {
-        val ts = (System.currentTimeMillis() / 1000).toString()
-        val hash =
-            DigestUtils.md5Hex("${ts}09dbd06ee2b3dcd432882eab1ed4d8ea3464e6974e7a4d4504d01a22c4b9884474797718")
-        val response = service.getDetail(
-            id = id,
-            ts = ts,
-            hash = hash
-        )
+    suspend fun getDetail(id: Int): Flow<ResponsePair<CharacterResponse, Unit>> = flow {
+        val response = service.getDetail(id = id)
         if (response.isSuccessful) {
             response.body()?.let {
-                emit(ResponsePair<CharacterDataWrapperResponse, Unit>(success = it))
+                emit(ResponsePair<CharacterResponse, Unit>(success = it))
             } ?: run {
-                emit(ResponsePair<CharacterDataWrapperResponse, Unit>(failure = Unit))
+                emit(ResponsePair<CharacterResponse, Unit>(failure = Unit))
             }
         } else {
-            emit(ResponsePair<CharacterDataWrapperResponse, Unit>(failure = Unit))
+            emit(ResponsePair<CharacterResponse, Unit>(failure = Unit))
         }
     }
 }

@@ -24,8 +24,7 @@ class ListViewModel @Inject constructor(
         viewModelScope.launch {
             getListUseCase(Unit).collect { response ->
                 response.success?.let {
-                    val vo = it.toPresentation()
-                    _characters.value = vo.data.results
+                    _characters.value = it.results.map { character -> character.toPresentation() }
                 }
             }
         }

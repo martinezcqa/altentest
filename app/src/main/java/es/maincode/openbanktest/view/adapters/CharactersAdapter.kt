@@ -50,14 +50,7 @@ class CharactersAdapter(
                     onClickItem(character.id)
                 }
                 tvTitle.text = character.name
-                ivImage.load(
-                    "${
-                        character.thumbnail.path.replace(
-                            "http",
-                            "https"
-                        )
-                    }.${character.thumbnail.extension}"
-                ) {
+                ivImage.load(character.image) {
                     listener(
                         onStart = {
                             pbProgress.visibility = View.VISIBLE

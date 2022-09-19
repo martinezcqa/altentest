@@ -67,12 +67,7 @@ class DetailFragment : BaseFragment(R.layout.fragment_detail) {
     private fun renderView(character: CharacterVO) {
         binding?.let {
             with(it) {
-                ivImage.load("${
-                    character.thumbnail.path.replace(
-                        "http",
-                        "https"
-                    )
-                }.${character.thumbnail.extension}")
+                ivImage.load(character.image)
                 toolbar.navigationIcon = ContextCompat.getDrawable(requireContext(), R.drawable.ic_back)
                 toolbar.setNavigationOnClickListener {
                     onBackPressed()

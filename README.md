@@ -1,12 +1,12 @@
-# Openbank - Mobile Test
+# Alten - Mobile Test
 
-App test to openbank<br />
+App test to Alten<br />
 
 # Architecture
 
 Modules: app (presentation), domain, data<br />
 Presentation Pattern: MVVM<br />
-Domain and data comunnication: Repository Pattern<br />
+Domain and data communication: Repository Pattern<br />
 
 # Third party dependencies
 
@@ -14,5 +14,4 @@ Hilt<br />
 Coil<br />
 Retrofit<br />
 Gson<br />
-Apache Commons Codec<br />
 OkHttp3<br />

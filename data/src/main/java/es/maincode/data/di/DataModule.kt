@@ -6,6 +6,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import es.maincode.data.BuildConfig
 import es.maincode.data.detail.DetailRemoteDataSource
 import es.maincode.data.detail.DetailRepositoryImpl
 import es.maincode.data.detail.DetailService
@@ -31,7 +32,7 @@ object DataModule {
         val logginInterceptor = HttpLoggingInterceptor()
         logginInterceptor.level = HttpLoggingInterceptor.Level.BODY
         return Retrofit.Builder()
-            .baseUrl("https://gateway.marvel.com:443/v1/public/")
+            .baseUrl(BuildConfig.BASE_URL)
             .client(OkHttpClient.Builder()
                 .connectTimeout(60L, TimeUnit.SECONDS)
                 .addInterceptor(logginInterceptor)

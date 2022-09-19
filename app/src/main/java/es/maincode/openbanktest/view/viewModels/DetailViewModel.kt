@@ -24,8 +24,7 @@ class DetailViewModel @Inject constructor(
         viewModelScope.launch {
             detailUseCase(id).collect { response ->
                 response.success?.let {
-                    val vo = it.toPresentation()
-                    _character.value = vo.data.results.first()
+                    _character.value = it.toPresentation()
                 }
             }
         }

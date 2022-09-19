@@ -6,6 +6,5 @@ import es.maincode.openbanktest.view.activities.MainActivity
 
 @AndroidEntryPoint
 open class BaseFragment(layout: Int) : Fragment(layout) {
-
     fun onBackPressed() = (requireActivity() as MainActivity).onBackPressed()
 }
