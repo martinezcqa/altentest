@@ -1,4 +1,4 @@
-package es.maincode.openbanktest.view.fragments
+package es.maincode.altentest.view.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,13 +10,12 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import coil.load
 import dagger.hilt.android.AndroidEntryPoint
-import es.maincode.openbanktest.R
-import es.maincode.openbanktest.base.BaseFragment
-import es.maincode.openbanktest.databinding.FragmentDetailBinding
-import es.maincode.openbanktest.view.adapters.CharacterAdapter
-import es.maincode.openbanktest.view.viewModels.DetailViewModel
-import es.maincode.openbanktest.view.vo.CharacterVO
-import kotlinx.coroutines.flow.collect
+import es.maincode.altentest.R
+import es.maincode.altentest.base.BaseFragment
+import es.maincode.altentest.databinding.FragmentDetailBinding
+import es.maincode.altentest.view.adapters.CharacterAdapter
+import es.maincode.altentest.view.viewModels.DetailViewModel
+import es.maincode.altentest.view.vo.CharacterVO
 
 @AndroidEntryPoint
 class DetailFragment : BaseFragment(R.layout.fragment_detail) {

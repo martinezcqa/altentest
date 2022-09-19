@@ -1,14 +1,13 @@
-package es.maincode.openbanktest.view.viewModels
+package es.maincode.altentest.view.viewModels
 
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import es.maincode.domain.list.GetListUseCase
-import es.maincode.openbanktest.base.BaseViewModel
-import es.maincode.openbanktest.view.vo.CharacterVO
-import es.maincode.openbanktest.view.vo.toPresentation
+import es.maincode.altentest.base.BaseViewModel
+import es.maincode.altentest.view.vo.CharacterVO
+import es.maincode.altentest.view.vo.toPresentation
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

@@ -1,4 +1,4 @@
-package es.maincode.openbanktest.base
+package es.maincode.altentest.base
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment

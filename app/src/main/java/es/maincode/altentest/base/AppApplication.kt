@@ -1,4 +1,4 @@
-package es.maincode.openbanktest.base
+package es.maincode.altentest.base
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

@@ -1,4 +1,4 @@
-package es.maincode.openbanktest.view.adapters
+package es.maincode.altentest.view.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,9 +6,9 @@ import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import es.maincode.openbanktest.R
-import es.maincode.openbanktest.databinding.ItemCharacterBinding
-import es.maincode.openbanktest.view.vo.CharacterVO
+import es.maincode.altentest.R
+import es.maincode.altentest.databinding.ItemCharacterBinding
+import es.maincode.altentest.view.vo.CharacterVO
 
 class CharactersAdapter(
     private val onClickItem: (Int) -> Unit

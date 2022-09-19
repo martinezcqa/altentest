@@ -1,11 +1,11 @@
-package es.maincode.openbanktest.view.adapters
+package es.maincode.altentest.view.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.RecyclerView
-import es.maincode.openbanktest.R
-import es.maincode.openbanktest.databinding.ItemDetailInfoBinding
+import es.maincode.altentest.R
+import es.maincode.altentest.databinding.ItemDetailInfoBinding
 
 class CharacterAdapter : RecyclerView.Adapter<CharacterAdapter.ItemViewHolder>() {
 

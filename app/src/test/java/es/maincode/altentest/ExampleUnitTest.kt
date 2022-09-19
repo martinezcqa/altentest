@@ -1,4 +1,4 @@
-package es.maincode.openbanktest
+package es.maincode.altentest
 
 import org.junit.Test
 

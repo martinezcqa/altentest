@@ -1,4 +1,4 @@
-package es.maincode.openbanktest.di
+package es.maincode.altentest.di
 
 import dagger.Module
 import dagger.hilt.InstallIn

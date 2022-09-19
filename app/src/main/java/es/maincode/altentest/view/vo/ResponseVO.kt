@@ -1,4 +1,4 @@
-package es.maincode.openbanktest.view.vo
+package es.maincode.altentest.view.vo
 
 import es.maincode.domain.common.*
 
